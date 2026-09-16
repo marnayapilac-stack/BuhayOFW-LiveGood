@@ -157,6 +157,11 @@ h1{
   color:#111;
   font-weight:800;
 }
+.whatsapp{
+  background:#25D366;
+  color:#fff;
+  font-weight:800;
+}
 .close{
   background:#eef1f4;
   color:#222;
@@ -194,11 +199,6 @@ h1{
 
     <div class="buttons">
 
-      <!-- Opens Messenger conversation -->
-      <button class="btn primary" type="button" onclick="openMessengerStart()">
-        Review LiveGood &amp; Get Started
-      </button>
-
       <!-- Opens product referral page -->
       <a
         class="btn products"
@@ -208,10 +208,9 @@ h1{
         LiveGood Wellness Products
       </a>
 
-      <!-- Opens your LiveGood referral / sign-up page -->
       <a
         class="btn signup"
-        href="https://LiveGoodTour.com/passiveincome2024"
+        href="https://livegoodtour.com/passiveincome2024"
         target="_blank"
         rel="noopener noreferrer">
         🚀 SIGN UP / JOIN LIVEGOOD
@@ -220,20 +219,15 @@ h1{
     </div>
 
     <section class="section">
-      <h2>Want help getting started?</h2>
+      <h2>Need help getting started?</h2>
       <p>
-        If you have questions after watching the review, send me a message on
-        Messenger. I can help you understand the next steps and point you to
-        the official LiveGood product page.
+        Have questions after watching the review? Contact us and choose the
+        easiest way for you to connect.
       </p>
 
-      <a
-        class="btn messenger"
-        href="https://m.me/1279931111867031"
-        target="_blank"
-        rel="noopener noreferrer">
-        Message Me on Messenger
-      </a>
+      <button class="btn messenger" type="button" onclick="openContactModal()">
+        Contact Us
+      </button>
     </section>
 
     <p class="note">
@@ -254,13 +248,13 @@ h1{
   </section>
 </main>
 
-<!-- Messenger start-conversation confirmation box -->
-<div class="modal-backdrop" id="messengerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+<!-- Contact Us options -->
+<div class="modal-backdrop" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactTitle">
   <div class="modal">
-    <h3 id="modalTitle">Ready to get started?</h3>
+    <h3 id="contactTitle">Contact Us</h3>
     <p>
-      Great! Send me a message on Messenger and I'll help you with the next
-      step.
+      Choose how you'd like to connect with us. We're happy to help with your
+      questions and next steps.
     </p>
 
     <div class="modal-actions">
@@ -269,11 +263,19 @@ h1{
         href="https://m.me/1279931111867031"
         target="_blank"
         rel="noopener noreferrer">
-        Open Messenger
+        💬 Contact us on Messenger
       </a>
 
-      <button class="btn close" type="button" onclick="closeMessengerStart()">
-        Continue Reviewing
+      <a
+        class="btn whatsapp"
+        href="https://wa.me/16714802828"
+        target="_blank"
+        rel="noopener noreferrer">
+        📱 Contact us on WhatsApp
+      </a>
+
+      <button class="btn close" type="button" onclick="closeContactModal()">
+        Close
       </button>
     </div>
   </div>
@@ -282,16 +284,16 @@ h1{
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 
-function openMessengerStart(){
-  document.getElementById("messengerModal").classList.add("show");
+function openContactModal(){
+  document.getElementById("contactModal").classList.add("show");
 }
 
-function closeMessengerStart(){
-  document.getElementById("messengerModal").classList.remove("show");
+function closeContactModal(){
+  document.getElementById("contactModal").classList.remove("show");
 }
 
-document.getElementById("messengerModal").addEventListener("click", function(e){
-  if(e.target === this) closeMessengerStart();
+document.getElementById("contactModal").addEventListener("click", function(e){
+  if(e.target === this) closeContactModal();
 });
 </script>
 
