@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Learn more about LiveGood wellness products and get started with help through Messenger.">
+<title>LiveGood Wellness Review | Buhay OFW Guam</title>
+
+<style>
+:root{
+  --navy:#071426;
+  --navy2:#0d2340;
+  --gold:#d9ad45;
+  --white:#fff;
+  --muted:#c1cad5;
+  --card:rgba(255,255,255,.075);
+  --line:rgba(255,255,255,.14);
+  --green:#25d366;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(145deg,var(--navy),var(--navy2));
+  color:var(--white);
+  min-height:100vh;
+}
+.container{
+  width:min(920px,100%);
+  margin:auto;
+  padding:24px 16px 42px;
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:30px 20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.28);
+  backdrop-filter:blur(10px);
+}
+.brand{
+  text-align:center;
+  color:var(--gold);
+  font-weight:800;
+  letter-spacing:2px;
+  font-size:13px;
+  text-transform:uppercase;
+}
+h1{
+  text-align:center;
+  font-size:clamp(30px,6vw,50px);
+  line-height:1.08;
+  margin:14px 0 12px;
+}
+.intro{
+  max-width:680px;
+  margin:0 auto 26px;
+  text-align:center;
+  color:var(--muted);
+  line-height:1.65;
+  font-size:17px;
+}
+.video-wrap{
+  position:relative;
+  width:100%;
+  aspect-ratio:16/9;
+  overflow:hidden;
+  border-radius:18px;
+  background:#000;
+  box-shadow:0 15px 45px rgba(0,0,0,.35);
+}
+.video-wrap iframe{
+  width:100%;
+  height:100%;
+  border:0;
+}
+.buttons{
+  display:grid;
+  gap:12px;
+  margin:26px auto 8px;
+  max-width:650px;
+}
+.btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:54px;
+  padding:14px 18px;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:800;
+  font-size:16px;
+  text-align:center;
+  cursor:pointer;
+  border:0;
+  transition:transform .15s ease,opacity .15s ease;
+}
+.btn:hover{transform:translateY(-1px);opacity:.94}
+.primary{background:var(--gold);color:#111}
+.messenger{background:#1877f2;color:#fff}
+.products{background:rgba(255,255,255,.09);color:#fff;border:1px solid var(--line)}
+.section{
+  margin-top:30px;
+  padding-top:25px;
+  border-top:1px solid var(--line);
+}
+.section h2{
+  margin:0 0 10px;
+  font-size:24px;
+}
+.section p{
+  color:var(--muted);
+  line-height:1.65;
+}
+.note{
+  margin-top:22px;
+  font-size:12px;
+  color:#aab5c3;
+  line-height:1.6;
+  text-align:center;
+}
+.footer{
+  margin-top:26px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  text-align:center;
+  color:#9faabb;
+  font-size:12px;
+  line-height:1.6;
+}
+.footer a{color:#d9c078;text-decoration:none}
+.modal-backdrop{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.72);
+  z-index:1000;
+  padding:18px;
+  align-items:center;
+  justify-content:center;
+}
+.modal-backdrop.show{display:flex}
+.modal{
+  width:min(520px,100%);
+  background:#fff;
+  color:#111;
+  border-radius:20px;
+  padding:24px;
+  box-shadow:0 25px 80px rgba(0,0,0,.5);
+}
+.modal h3{margin:0 0 10px;font-size:24px}
+.modal p{color:#4d5560;line-height:1.55}
+.modal-actions{display:grid;gap:10px;margin-top:18px}
+.modal .btn{width:100%}
+.close{
+  background:#eef1f4;
+  color:#222;
+}
+@media(max-width:520px){
+  .container{padding:12px 10px 30px}
+  .card{padding:24px 14px;border-radius:18px}
+  .intro{font-size:16px}
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+  <section class="card">
+
+    <div class="brand">Buhay OFW Guam</div>
+
+    <h1>Watch the LiveGood Review</h1>
+
+    <p class="intro">
+      Take a few minutes to learn more about LiveGood and its wellness
+      products. After watching, you can review the products or message me
+      directly if you want help getting started.
+    </p>
+
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube.com/embed/Ku1zX_HLZlY"
+        title="LiveGood Review"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="buttons">
+
+      <!-- Opens Messenger conversation -->
+      <button class="btn primary" type="button" onclick="openMessengerStart()">
+        Review LiveGood &amp; Get Started
+      </button>
+
+      <!-- Opens product referral page -->
+      <a
+        class="btn products"
+        href="https://ShopLiveGood.com/passiveincome2024"
+        target="_blank"
+        rel="noopener noreferrer">
+        LiveGood Wellness Products
+      </a>
+
+    </div>
+
+    <section class="section">
+      <h2>Want help getting started?</h2>
+      <p>
+        If you have questions after watching the review, send me a message on
+        Messenger. I can help you understand the next steps and point you to
+        the official LiveGood product page.
+      </p>
+
+      <a
+        class="btn messenger"
+        href="https://m.me/1279931111867031"
+        target="_blank"
+        rel="noopener noreferrer">
+        Message Me on Messenger
+      </a>
+    </section>
+
+    <p class="note">
+      Information on this page is provided for general informational and
+      referral purposes. Product availability, pricing, membership terms,
+      guarantees and company policies may change. Review the current official
+      LiveGood information before purchasing or joining.
+    </p>
+
+    <div class="footer">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      &nbsp;|&nbsp;
+      <a href="disclaimer.html">Disclaimer</a>
+      <br><br>
+      © <span id="year"></span> Buhay OFW Guam
+    </div>
+
+  </section>
+</main>
+
+<!-- Messenger start-conversation confirmation box -->
+<div class="modal-backdrop" id="messengerModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <h3 id="modalTitle">Ready to get started?</h3>
+    <p>
+      Great! Send me a message on Messenger and I'll help you with the next
+      step.
+    </p>
+
+    <div class="modal-actions">
+      <a
+        class="btn messenger"
+        href="https://m.me/1279931111867031"
+        target="_blank"
+        rel="noopener noreferrer">
+        Open Messenger
+      </a>
+
+      <button class="btn close" type="button" onclick="closeMessengerStart()">
+        Continue Reviewing
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+function openMessengerStart(){
+  document.getElementById("messengerModal").classList.add("show");
+}
+
+function closeMessengerStart(){
+  document.getElementById("messengerModal").classList.remove("show");
+}
+
+document.getElementById("messengerModal").addEventListener("click", function(e){
+  if(e.target === this) closeMessengerStart();
+});
+</script>
+
+</body>
+</html>
